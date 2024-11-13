@@ -9,18 +9,20 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            white-space: pre-wrap;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <div>
-        <p>Consent Form for IRB-FY2024-8291</p>
+    <div class="content">
+        <h1>Consent Form for IRB-FY2024-8291</h1>
+        
+        <p>You have been invited to take part in a research study to learn more about how the use of assistive technologies affects the daily life experiences of individuals who are blind or have low vision. This study will be conducted by Danny Y. Huang, TANDON - Electrical & Computer Engineering (ECE), Tandon School of Engineering, New York University.</p>
 
-        <p>You have been invited to take part in a research study to learn more about how the use of assistive technologies affects the daily life experiences of individuals who are blind or have low vision. This study will be conducted by Danny Y. Huang, TANDON - Electrical & Computer Engineering (ECE), Tandon School of Engineering, New York University</p>
-
-        <p>If you agree to be in this study, you will be asked to do the following:</p>
-
+        <h2>If you agree to be in this study, you will be asked to do the following:</h2>
         <ul>
             <li>Fill out a brief online survey to confirm your eligibility for the study, including questions about your visual impairment and your usage of assistive technologies, and provide your consent to participate.</li>
             <li>Download the WireGuard app on your smartphone. Follow the instructions provided to set up the VPN, which will be used to collect network traffic data related to your usage of blindness and low vision-specific apps.</li>
@@ -31,18 +33,24 @@
 
         <p>Participation in this study will involve approximately 5-10 minutes to complete the online screening survey and provide consent, and up to 48 hours of using the VPN on your smartphone over a period of one week, distributed according to your convenience. Additionally, there will be a brief guided discussion of about 10 minutes at the end of the data collection period. The feedback discussion via phone call will allow us to understand your experience better and improve future studies. We have built our own VPN using WireGuard to facilitate this study, hosted on NYU CUSP's virtual machines. We store data only related to blindness and low vision (BLV) apps for analysis using an allowlist that only contains hostnames specifically tied to BLV apps, and all other network traffic passes through our infrastructure. In other words, we will keep your BLV traffic on our server, but all other non-BLV traffic will simply pass through our VPN without being seen or analyzed by us. The WireGuard VPN handles data security during transmission using cryptographic techniques such as AES 256. We analyze the packets received on our VPN server on the fly, keeping relevant packets in memory and clearing the memory afterward. Only registered participants in our study will be given a QR code containing a unique VPN profile to join our VPN, and we verify participant identities through SMS text messages. There is an unlikely situation that law enforcement may learn about your participation in the study and ask the researchers for the data that they get from the web traffic on your phone. If this happens, then the researchers may provide law enforcement with this information. In all other situations, the researchers will not share any information that could personally identify you. Initial here: __________</p>
 
+        <h2>Potential Benefits</h2>
         <p>Participants may experience direct benefits from participating in the study, including a smoother and faster browsing experience with the ad-blocking VPN service that blocks intrusive ads and reduces data consumption. They will help build a community of visually impaired individuals, contributing to a supportive network where peers can connect and share experiences. Personalized recommendations will be generated based on the specific app usage patterns of the participants. The research team will analyze the anonymized, aggregated data to identify popular and beneficial apps used by other participants with similar needs and preferences. These insights will allow us to suggest apps that may improve each participant’s user experience with assistive technologies. Additionally, the community aspect allows participants to share their experiences and insights about different apps, fostering a collective learning environment. Additionally, participants will gain peer insights, enabling the creation of a ranking system for the most popular and useful apps. Lastly, they will receive a personalized security report analyzing their app usage with recommendations to enhance their digital security and privacy.</p>
 
+        <h2>Potential Risks</h2>
         <p>While the study has been designed to minimize risks, there are some potential risks to participants. There is a risk of a breach of confidentiality whenever personally identifiable information, such as phone numbers, is linked to study data, although this risk is low due to robust data security measures. Participants may also experience emotional discomfort from receiving SMS messages asking them to confirm their app usage, although this is minimal as the messages are infrequent and phrased in a neutral manner. Additionally, there is a risk of hacking; should the study's data be hacked, an attacker could obtain phone numbers along with BLV network traffic. To mitigate this, we do not store any personal information beyond phone numbers, and we only keep the latest 2 hours of BLV traffic, excluding personal communications like emails and social media.</p>
 
+        <h2>Compensation</h2>
         <p>Participants will earn $5 for every 12 hours of traffic collection, up to a maximum of $20 for 48 hours. Additionally, those who complete the study, respond to SMS messages, and participate in the final guided discussion will receive an extra $20. The total possible compensation is $40, which will be provided in the form of Amazon gift cards.</p>
 
+        <h2>Confidentiality</h2>
         <p>Confidentiality of your research records will be strictly maintained by implementing several measures to ensure data protection. All data transmitted through our WireGuard VPN is secured using cryptographic techniques, such as AES 256. We employ strict access controls, allowing only registered participants to join our VPN via a unique QR code, and we verify participant identities through SMS text messages. Relevant packets are kept in memory only for a short period necessary for analysis, and no packets are stored on disk. Our project complies with university data privacy and security policies and is overseen by the Institutional Review Board (IRB) to ensure proper data handling and protection. We only analyze network flows matching a known whitelisted pattern for BLV apps, and non-whitelisted flows are immediately forwarded without being analyzed. Information not containing identifiers may be used in future research, shared with other researchers, or placed in a data repository without your additional consent.</p>
 
+        <h2>Voluntary Participation and Withdrawal</h2>
         <p>If at any point you decide that you no longer wish for the app to track your smartphone use, you can simply toggle the VPN switch off in the WireGuard app. This will immediately stop the VPN from monitoring any network traffic. If you decide to permanently withdraw from the study, please toggle the VPN switch off and then uninstall the WireGuard app from your smartphone. This will ensure that no further data is collected or monitored.</p>
 
         <p>Participation in this study is voluntary. You may refuse to participate or withdraw at any time without penalty. If you choose to participate, you have the right to skip or not answer any questions during interviews, questionnaires, or surveys that you prefer not to answer. There will be no consequences for choosing not to participate or for withdrawing from the study at any point.</p>
 
+        <h2>Contact Information</h2>
         <p>If there is anything about the study or your participation that is unclear or that you do not understand, if you have questions or wish to report a research-related problem, you may contact Danny Y. Huang at (646) 997-0500, dhuang@nyu.edu, 370 Jay Street 13th Floor Brooklyn, NY 11201.</p>
 
         <p>For questions about your rights as a research participant, you may contact the University Committee on Activities Involving Human Subjects (UCAIHS), New York University, 665 Broadway, Suite 804, New York, New York, 10012, at ask.humansubjects@nyu.edu or (212) 998-4808. Please reference the study # (IRB-FY2024-8291) when contacting the IRB (UCAIHS).</p>
